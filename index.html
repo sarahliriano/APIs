@@ -10,26 +10,39 @@
     <link href="style.css" rel="stylesheet" />
   </head>
 
-  <body>
-    <div id="root"></div>
-    <div id="app">
-        <header class="header">
-          <!-- <h1 class="header__title">NowCast</h1> -->
-        </header>
-        <main class="main">
-          <!-- .current will update dynamically -->
-          <section class="current"></section>
-          <!-- the form -->
-          <section class="form__section">
-            <form class="form__container">
-              <input class="form__input form__input--text" type="text" placeholder="brooklyn, ny" value="Brookyln,ny" name="location">
-              <input class="form__input form__input--submit" type="submit" value="→" name="submit">
-            </form>
-          </section>
-        </main>
-        <footer class="footer"></footer>
-      </div>
-    <script src="scripts.js"></script>
-    <script src="main.js"></script>
-  </body>
+    <body>
+        <div id="app">
+            <header class="header">
+            <!-- <h1 class="header__title">NowCast</h1> -->
+            </header>
+           
+            <main class="info">
+                <!-- .current will update dynamically -->
+                <section class="current"></section>
+                <section class="desc"></section>
+                <section class="feels"></section>
+            
+            </main>
+            <main class="main">
+                <!-- the form -->
+                <section class="form__section">
+                    <form class="form__container">
+                    <input class="form__input form__input--text" type="text" placeholder="brooklyn, ny" value="Brooklyn,ny" name="location">
+                    <input class="form__input form__input--submit" type="submit" value="→" name="submit">
+                    </form>
+                </section>
+            </main>   
+        </div>
+        <div class="">
+            <div class="clothes">
+                <div class="clothes__tshirt"><img src="t-shirt-01.png" alt="" height=200 width=200></div>
+                <div class="clothes__shirt"><img src="shirt-01.png" alt="" height=200 width=200></div>
+                <div class="clothes__jeans"><img src="jeans-01.png" alt="" height=200 width=200></div>
+            </div> 
+            
+            <footer class="footer"></footer>
+        </div>
+        <script src="scripts.js"></script>
+        <script src="main.js"></script>
+    </body>
 </html>

@@ -3,7 +3,7 @@
     margin:0;
     box-sizing: border-box;
   }
-  
+ 
   html{
     font-size: 16px;
     width:100%;
@@ -14,6 +14,8 @@
     font-family: Arial, Helvetica, sans-serif;
     width:100%;
     height:100%;
+    overflow: hidden;
+    background: linear-gradient(163deg, rgba(238,238,238,1) 19%, rgba(104,113,107,0.767927153771665) 96%);
   }
   
   #app{
@@ -21,8 +23,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:100vh;
-    background: linear-gradient(163deg, rgba(238,238,238,1) 19%, rgba(104,113,107,0.767927153771665) 96%);
+    height:50%;
   }
   
   /* main */
@@ -30,8 +31,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:80%;
-    max-width: 600px;
+    width:100%;
+  }
+
+  .info{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 100%;
+    margin: 0%, 0%, 10%, 10%;
+  }
+
+  .clothes{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    width:100%;
+    max-width: 100%;
+    justify-content: center;
+    padding: 5rem;
   }
   
   /* current  */
@@ -90,3 +108,5 @@
     color:white;
     width:2rem;
   }
+
+  

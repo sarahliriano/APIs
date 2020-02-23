@@ -10,6 +10,9 @@ class Weather {
       
       this.data = {
         current: {},
+        desc:{},
+        feels:{},
+
       };
     }
   
@@ -60,15 +63,31 @@ class Weather {
         const el = `
         <section class="current">
           <p class="current__location">${location}</p>
-          <p class="current__feels">Feels like ${currentFeelsLikeTemp}°</p>
           <h2 class="current__temperature">${currentTemp}°</h2>
+        </section>
+        `
+        const el1 = `
+        <section class="desc">
           <p class="current__description">${desc}</p>
+        </section>
+        `
+        const el2 = `
+        <section class="feels">
+          <p class="current__feels">Feels like ${currentFeelsLikeTemp}°</p>
         </section>
         `
         
         const $currentEl = this.createElementFromText(el);
         const $current = document.querySelector(".current");
         $current.replaceWith($currentEl)
+
+        const $currentEl1 = this.createElementFromText(el1);
+        const $desc = document.querySelector(".desc");
+        $desc.replaceWith($currentEl1)
+
+        const $currentEl2 = this.createElementFromText(el2);
+        const $feels = document.querySelector(".feels");
+        $feels.replaceWith($currentEl2)
       }
     
       async update(){
