@@ -37,9 +37,9 @@
   .info{
     display: flex;
     flex-direction: row;
-    align-content: center;
+    align-items: center;
     width: 100%;
-    margin: 0%, 0%, 10%, 10%;
+    /* margin: 0%, 0%, 10%, 10%; */
   }
 
   .clothes{
@@ -49,28 +49,43 @@
     width:100%;
     max-width: 100%;
     justify-content: center;
-    padding: 5rem;
+    padding: 6rem;
+    height:50%;
   }
-  
-  /* current  */
-  .current {
-    margin: 1rem 0 1rem 0;
-    display: flex;
-    flex-direction:column;
-    text-align: center;
-    padding: 1rem;
+  .info__content{
+      display: flex;
+    justify-content: center;
+    width:33%;
+    align-items: center;
   }
+
   .current__location{
     font-size: 3rem;
     margin-bottom:1rem;
+    margin-top: 6rem;
     font-weight: lighter;
+    text-transform: capitalize;
   }
   .current__temperature{
     font-size:8rem;
     margin:1rem 0 0.5rem 0;
   }
+  .current__feels{
+    font-size:8rem;
+    font-weight: bold;
+    margin:1rem 0 0.5rem 0;
+    /* padding-top: 5rem; */
+  }
+  .current_feels_text{
+    font-size: 3rem;
+    margin-bottom:1rem;
+    margin-top: 6rem;
+    font-weight: lighter;
+    text-transform: capitalize;
+    /* padding-top: 5rem; */
+  }
   
-  .current__description, .current__feels{
+  .current__description{
     font-weight: lighter;
     text-transform: capitalize;
   }
@@ -79,7 +94,8 @@
   /* form */
   .form__section{
     height:2rem;
-    margin-top:1.4rem;
+    /* margin-top:1.4rem; */
+    /* margin-bottom: 10rem; */
   }
   
   .form__container{

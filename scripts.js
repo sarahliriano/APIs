@@ -73,7 +73,8 @@ class Weather {
         `
         const el2 = `
         <section class="feels">
-          <p class="current__feels">Feels like ${currentFeelsLikeTemp}°</p>
+        <p class="current_feels_text"> Feels Like </p>
+          <p class="current__feels">${currentFeelsLikeTemp}°</p>
         </section>
         `
         
