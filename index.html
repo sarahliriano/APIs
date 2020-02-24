@@ -6,11 +6,13 @@
 
     <title>Clothing Weather App</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet" /> -->
     <link href="style.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
   </head>
 
-    <body>
+    <body id="body">
         <div id="app">
             <header class="header">
             <!-- <h1 class="header__title">NowCast</h1> -->
@@ -21,8 +23,9 @@
                 <div class="info__content">
                     <section class="center-aligned-content current"></section>
                 </div>
-                <div class="info__content">
+                <div class="info__content desc__content">
                     <section class="center-aligned-content desc"></section>
+                    <img class="img_desc" id="desc_img" src="icons/moon-01.png" alt="" height=160 width=160>
                 </div>
                 <div class="info__content">
                     <section class="center-aligned-content feels"></section>
@@ -43,9 +46,34 @@
         </div>
         <div class="">
             <div class="clothes">
-                <div class="clothes__tshirt"><img src="icons/t-shirt-01.png" alt="" height=200 width=200></div>
-                <div class="clothes__shirt"><img src="icons/shirt-01.png" alt="" height=200 width=200></div>
-                <div class="clothes__jeans"><img src="icons/jeans-01.png" alt="" height=200 width=200></div>
+                <div id="winter" class="clothes__cold-temp">
+                    <div class="clothes__cold-temp__tshirt"><img src="icons/t-shirt-01.png" alt="" height=140 width=140></div>
+                    <div class="clothes__cold-temp__shirt"><img src="icons/shirt-01.png" alt="" height=140 width=140></div>
+                    <div class="clothes__cold-temp__jeans"><img src="icons/jeans-01.png" alt="" height=140 width=140></div>
+                    <div class="clothes__cold-temp__sweater(1)"><img src="icons/sweater (1)-01.png" alt="" height=140 width=140></div>
+                    <div class="clothes__cold-temp__sweater"><img src="icons/sweater-01.png" alt="" height=140 width=140></div>
+                    <div class="clothes__cold-temp__pantyhose"><img src="icons/pantyhose-01.png" alt="" height=110 width=110></div>
+                    <div class="clothes__cold-temp__clothes"><img src="icons/clothes-01.png" alt="" height=140 width=140></div>
+                    <div class="clothes__cold-temp__boot"><img src="icons/boot-01.png" alt="" height=100 width=100></div>
+                    <div class="clothes__fall-temp__jacket"><img src="icons/jacket-01.png" alt="" height=140 width=140></div>
+                </div>
+                <div id="fall" class="clothes__fall-temp">
+                    <div class="clothes__fall-temp__jacket"><img src="icons/jacket (1)-01.png" alt="" height=140 width=140></div>
+                    <div class="clothes__fall-temp__clothes"><img src="icons/clothes-01.png" alt="" height=160 width=160></div>
+                    <div class="clothes__fall-temp__boot"><img src="icons/boot-01.png" alt="" height=100 width=100></div>
+                    <div class="clothes__fall-temp__jeans"><img src="icons/jeans-01.png" alt="" height=140 width=140></div>
+                    <div class="clothes__tshirt"><img src="icons/socks-01.png" alt="" height=140 width=140></div>  
+                </div>
+                <div id="rain" class="clothes__rain">
+                    <div class="clothes__rain__umbrella"><img src="icons/umbrella-01.png" alt="" height=140 width=140></div>
+                    <div class="clothes__rain__raincoat"><img src="icons/raincoat-01.png" alt="" height=140 width=140></div>
+                    <div class="clothes__rain__boots"><img src="icons/boots-01.png" alt="" height=140 width=140></div>
+                </div>
+                <div id="summer" class="clothes__summer">
+                    <div class="clothes__summer__high-heels"><img src="icons/high-heels-01.png" alt="" height=140 width=140></div>
+                    <div class="clothes__summer__dress"><img src="icons/dress-01.png" alt="" height=140 width=140></div>
+                    <div class="clothes__summer__dress"><img src="icons/dress (1)-01.png" alt="" height=140 width=140></div>
+                </div>
             </div> 
             
             <footer class="footer"></footer>

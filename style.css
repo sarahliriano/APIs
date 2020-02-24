@@ -11,11 +11,12 @@
   }
   
   body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Nunito;
     width:100%;
     height:100%;
-    overflow: hidden;
-    background: linear-gradient(163deg, rgba(238,238,238,1) 19%, rgba(104,113,107,0.767927153771665) 96%);
+    /* overflow: hidden; */
+    background: linear-gradient(180deg, rgba(185, 243, 255,1) 19%, rgba(159, 221, 255,1) 100%);
+    text-decoration-color: #FFADAC;
   }
   
   #app{
@@ -24,6 +25,7 @@
     justify-content: center;
     align-items: center;
     height:50%;
+    text-decoration-color: #FFADAC;
   }
   
   /* main */
@@ -39,7 +41,9 @@
     flex-direction: row;
     align-items: center;
     width: 100%;
+    justify-content: center;
     /* margin: 0%, 0%, 10%, 10%; */
+    text-decoration-color: #FFADAC;
   }
 
   .clothes{
@@ -47,47 +51,109 @@
     flex-direction: row;
     /* align-items: center; */
     width:100%;
-    max-width: 100%;
     justify-content: center;
     padding: 6rem;
     height:50%;
   }
+  .clothes__cold-temp{
+    display: flex;
+    flex-direction: row;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center; 
+    padding-left: 160%;
+    padding-right: 7%;  
+
+  }
+  .clothes__fall-temp{
+    display: flex;
+    flex-direction: row;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .clothes__rain{
+    display: flex;
+    flex-direction: row;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+  }
+  .clothes__summer{
+    display: flex;
+    flex-direction: row;
+    visibility: hidden; 
+    align-items: center;
+    justify-content: center;
+  }
   .info__content{
-      display: flex;
+    display: flex;
     justify-content: center;
     width:33%;
     align-items: center;
   }
+  .desc__content{
+      display: flex;
+      flex-direction: column;
+  }
 
+  .img_desc{
+      margin-top: 2rem;
+  }
+
+  .current{
+      padding-left: 4rem;
+      text-decoration-color: #FFADAC;
+  }
+  .feels{
+    padding-right: 4rem;
+    text-decoration-color: #FFADAC;
+}
   .current__location{
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom:1rem;
     margin-top: 6rem;
     font-weight: lighter;
     text-transform: capitalize;
+    color: #FFADAC;
   }
   .current__temperature{
-    font-size:8rem;
+    font-size:9rem;
+    text-align: center;
     margin:1rem 0 0.5rem 0;
+    color: #FFADAC;
   }
   .current__feels{
-    font-size:8rem;
+    font-size:9rem;
     font-weight: bold;
-    margin:1rem 0 0.5rem 0;
+    text-align: center;
+    /* margin:1rem 0 0.5rem 0; */
+    align-items: center;
     /* padding-top: 5rem; */
+    color: #FFADAC;
   }
   .current_feels_text{
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom:1rem;
     margin-top: 6rem;
     font-weight: lighter;
     text-transform: capitalize;
+    align-items: center;
+    text-align: center;
     /* padding-top: 5rem; */
+    color: #FFADAC;
   }
   
   .current__description{
+    font-size: 1rem;
     font-weight: lighter;
     text-transform: capitalize;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFADAC;
   }
   
   
@@ -106,21 +172,21 @@
   
   .form__input{
     box-shadow: 4px 4px 0 #eee;
-    color: #555555;
+    color: #FFADAC;
   }
   
   .form__input--text{
-    border-top:2px solid #555555;
-    border-left:2px solid #555555;
-    border-bottom:2px solid #555555;
+    border-top:2px solid #FFADAC;
+    border-left:2px solid #FFADAC;
+    border-bottom:2px solid #FFADAC;
     border-right:none;
     padding: 0 0 0 0.5rem;
     background-color:#eee;
   }
   
   .form__input--submit{
-    border:2px solid #555555;
-    background-color:#555555;
+    border:2px solid #FFADAC;
+    background-color:#FFADAC;
     color:white;
     width:2rem;
   }
